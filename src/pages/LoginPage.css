@@ -1,0 +1,39 @@
+.Login {
+    max-width: 400px;
+    max-height: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2cap;
+    padding: 2%;
+    margin: 0 auto;
+    align-items: center;
+}
+.LoginBody{
+    height: 960;
+    align-items: center;
+}
+.container{
+    padding-right: 1000px;
+}
+.topicBook{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+.topicBook1{
+    
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+
+.font1 {
+    font-size: 25px;
+    color: #777373;
+    border-bottom: 1px solid black;
+  }
+
+.btnSell{
+    float: right;
+}
+.con1{
+    background-color: #777373;
+}

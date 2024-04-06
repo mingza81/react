@@ -1,0 +1,23 @@
+.app-header{
+  background-color: #0F52BA;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  align-items: center;
+}
+.app-menu{
+  background-color: #F1F1F1;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-bookrow{
+  display: grid;
+  grid-template-rows: 1ft 1ft ;
+  column-gap: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,37 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .custom-card {
+    flex-basis: calc(20% - 20px); /* 20% เพื่อให้มี 5 การ์ดในแถว, 20px เพื่อระบุระยะห่างระหว่างการ์ด */
+    margin-bottom: 20px;
+  }
+  .btnBook {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 0;
+    padding: 5px 10px;
+    background-color: rgb(175, 160, 160);  
+    color: white; 
+    margin-top: auto;
+}
+
+.ctn1{
+  padding-right: 1000;
+  padding-inline-start: 500px;
+  padding-inline-end: 500px;
+  background-color: aqua;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.details01{
+  position: absolute;
+  float: right;
+}
+
+
