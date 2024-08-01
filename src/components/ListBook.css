@@ -14,7 +14,7 @@
     left: 10px;
     z-index: 0;
     padding: 5px 10px;
-    background-color: rgb(175, 160, 160);  
+    
     color: white; 
     margin-top: auto;
 }
@@ -23,7 +23,6 @@
   padding-right: 1000;
   padding-inline-start: 500px;
   padding-inline-end: 500px;
-  background-color: aqua;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;

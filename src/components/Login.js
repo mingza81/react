@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
@@ -12,7 +13,7 @@ function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
       const response = await fetch('http://localhost:3001/login', {
         method: 'POST',
@@ -21,7 +22,7 @@ function Login() {
         },
         body: JSON.stringify({ email, password }),
       });
-
+  
       const data = await response.json();
       if (data.success) {
         localStorage.setItem('users', JSON.stringify({
@@ -30,11 +31,14 @@ function Login() {
           userid: data.userid,
           firstname: data.firstname,
           lastname: data.lastname
-      }));
-      console.log('Login successful');
-      alert("ล้อคอินสำเร็จ");
-      navigate('/home');
-        
+        }));
+        console.log('Login successful');
+        alert("ล้อคอินสำเร็จ");
+        if (email === 'admin@gmail.com') {
+          navigate('/examine');
+        } else {
+          navigate('/home');
+        }
       } else {
         console.error('Login failed: ', data.message);
         alert('ไม่พบบัญชีผู้ใช้ ');
@@ -52,7 +56,7 @@ function Login() {
     
     <Container className='LoginBody'>
       <div className='Login'>
-        <h2>Login</h2>
+        <h2>Horsamud</h2>
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
@@ -67,7 +71,7 @@ function Login() {
           <Button variant="primary" type="submit">
             Login
           </Button>
-          <Button className='btnReg' variant="primary" type="button" onClick={handleRegisterButtonClick}>
+          <Button className='btnReg'  variant="primary" type="button" onClick={handleRegisterButtonClick}>
             Register
           </Button>
         </Form>

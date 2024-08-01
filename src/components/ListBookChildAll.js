@@ -41,7 +41,7 @@ function ListBook() {
               onChange={(e) => setSearchQuery(e.target.value)}
             />
           </Form.Group>
-          <p className='font1'>หนังสือทั้งหมด</p>
+          <p className='font1'>หนังสือเด็กทั้งหมด</p>
           <div className="card-container">
             {filteredBooks.map((data, index) => (
               <Card key={index} style={{ width: '100%', height: '500px' }} className="custom-card">
@@ -50,7 +50,7 @@ function ListBook() {
                 <Card.Body>
                   <Card.Title>{data.book_title}</Card.Title>
                   <Card.Text>ผู้แต่ง: {data.author}</Card.Text>
-                  <Button variant="secondary" className='btnBook' onClick={() => window.location.href=`/bookdetail/${data.bookid}`}>
+                  <Button variant="success" className='btnBook' onClick={() => window.location.href=`/bookdetail/${data.bookid}`}>
                     ดูรายละเอียด
                     </Button>
                 </Card.Body>

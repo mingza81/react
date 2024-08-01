@@ -50,7 +50,7 @@ function ListBook() {
                 <Card.Body>
                   <Card.Title>{data.book_title}</Card.Title>
                   <Card.Text>ผู้แต่ง: {data.author}</Card.Text>
-                  <Button variant="secondary" className='btnBook' onClick={() => window.location.href=`/bookdetail/${data.bookid}`}>
+                  <Button variant="success" className='btnBook' onClick={() => window.location.href=`/bookdetail/${data.bookid}`}>
                     ดูรายละเอียด
                     </Button>
                 </Card.Body>

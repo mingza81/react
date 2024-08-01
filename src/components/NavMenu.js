@@ -14,9 +14,9 @@ function NavMenu(){
 
     return(
       <div>
-      <Navbar bg="dark" data-bs-theme="dark">
+      <Navbar style={{ backgroundColor: '#235D3A' }} data-bs-theme="dark">
         <Container>
-          <Navbar.Brand >E-bookshop</Navbar.Brand>
+          <Navbar.Brand >Horsamud</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/home">หน้าแรก</Nav.Link>
             <Nav.Link href="/bookshop">ร้านหนังสือ</Nav.Link>
@@ -28,12 +28,12 @@ function NavMenu(){
         
           <DropdownButton
            id="dropdown-button-dark-example2"
-           variant="dark"
+           variant="success"
            title={`ยินดีต้อนรับ ผู้ใช้ : ${users.firstname}`}
            data-bs-theme="dark"
           >
-        <Dropdown.Item href="#/action-3">ประวัติการเช่าหนังสือ</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">ลงขายหนังสือ</Dropdown.Item>
+        <Dropdown.Item href="/history">ประวัติการเช่าหนังสือ</Dropdown.Item>
+        
         <Dropdown.Divider />
         <Dropdown.Item onClick={handleLogout}>ออกจากระบบ</Dropdown.Item>
       </DropdownButton>

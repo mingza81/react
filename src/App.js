@@ -2,17 +2,23 @@ import './App.css';
 import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import SellBooksPage from './pages/SellBooksPage';
+import SellingBook from './pages/SellingBook';
 import MyBookPage from './pages/MyBookPage';
 import BucketPage from './pages/BucketPage';
 import RegisterPage from './pages/RegisterPage';
+import HistoryPage from './pages/HistoryPage';
+import ExaminePage from './pages/ExaminePage';
+import SuccessPage from './pages/SuccessPage';
+import CancelPage from './pages/CancelPage';
 import ListBookChildAll from '../src/components/ListBookChildAll';
+import StoryBook from '../src/components/StoryBook';
 import ListBookEducationalAll from '../src/components/ListBookEducationalAll';
 import ListBookFinanceAll from '../src/components/ListBookFinanceAll';
 import ListBookNovelAll from '../src/components/ListBookNovelAll';
 import ListBookPsychologyAll from '../src/components/ListBookPsychologyAll';
 import AllBookList from '../src/components/AllBookList';
 import EBookDetail from '../src/components/EBookDetail';
-import Payment from './components/Payment';
+
 import { useRoutes } from 'react-router-dom';
 
 
@@ -71,9 +77,31 @@ const routes = [
     element: <EBookDetail />,
   },
   {
-    path: '/bucket/payment',
-    element: <Payment />,
+    path: '/sellingbook',
+    element: <SellingBook />,
   },
+  {
+    path: '/history',
+    element: <HistoryPage />,
+  },
+  {
+    path: '/examine',
+    element: <ExaminePage />,
+  },
+  {
+    path: '/success',
+    element: <SuccessPage />,
+  },
+  {
+    path: '/cancle',
+    element: <CancelPage />,
+  },
+  {
+    path: '/storybook/:bookid',
+    element: <StoryBook />,
+  },
+ 
+  
 
 ];
 
